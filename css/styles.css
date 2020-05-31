@@ -1345,7 +1345,7 @@ a:focus {
   transition: all 0.5s ease-in-out;
 }
 #masthead .header-logo {
-  width: 200px;
+  width: 80%;
   display: block;
 }
 @media (min-width: 768px) {
