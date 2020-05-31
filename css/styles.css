@@ -1355,7 +1355,7 @@ a:focus {
 }
 @media (min-width:992px) {
   #masthead .header-logo {
-    width: 314px;
+    width: 80%;
     margin-top: 0;
   }
 }
