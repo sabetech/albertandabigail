@@ -184,7 +184,8 @@
           submitHandler: function(form) {
             $.ajax({
               type: "POST",
-              url: "https://anagkazo.firstlovegallery.com/api/receive_message",
+              //url: "https://anagkazo.firstlovegallery.com/api/receive_message",
+              url: "backend/receive_message.php",
               data: {
                 "name": $("#contactForm #name").val(),
                 "message": $("#contactForm #message").val()
