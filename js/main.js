@@ -207,7 +207,7 @@
               },
               beforeSend: function(xhr){
                 xhr.setRequestHeader("Content-Type", "application/json");
-                //xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+                xhr.setRequestHeader("Access-Control-Allow-Origin", "https://albertandabigail.beadsandseams.com/");
                 xhr.setRequestHeader("Access-Control-Allow-Headers", "x-requested-with");
                 
                 $('#contactWait').fadeIn(200);
