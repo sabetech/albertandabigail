@@ -184,16 +184,14 @@
           submitHandler: function(form) {
             $.ajax({
               type: "POST",
-              url: "php/contact-form.php",
+              url: "http://anagkazo.firstlovegallery.com/api/receive_message",
               data: {
                 "name": $("#contactForm #name").val(),
-                "email": $("#contactForm #email").val(),
-                "events": $("#contactForm #events").val(),
-                "guests": $("#contactForm #guests").val(),
                 "message": $("#contactForm #message").val()
               },
               dataType: "json",
               success: function (data) {
+
                 if (data.response == "success") {
                   $('#contactWait').hide();
                   $("#contactSuccess").fadeIn(300).addClass('modal-show');
@@ -208,6 +206,7 @@
                 }
               },
               beforeSend: function() {
+                
                 $('#contactWait').fadeIn(200);
               }
             });
